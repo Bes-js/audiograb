@@ -1,0 +1,71 @@
+{
+  "name": "audiograb",
+  "version": "1.0.0",
+  "description": "A simple audio grabber for windows, linux, mac, and raspberry pi",
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "Bes-js",
+    "url": "https://github.com/Bes-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bes-js/audiograb"
+  },
+  "bugs": {
+    "url": "https://github.com/Bes-js/audiograb/issues"
+  },
+  "homepage": "https://discord.gg/luppux",
+  "os": [
+    "darwin",
+    "linux",
+    "win32",
+    "aix"
+  ],
+  "keywords": [
+    "audio",
+    "grabber",
+    "ffmpeg",
+    "microphone",
+    "audio-recorder",
+    "audio-grabber",
+    "audio-recording",
+    "recorder",
+    "recording"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    "import": {
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "types": {
+      "require": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    },
+    "default": {
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    },
+    "node": {
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build:package": "tsup",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  }
+}
